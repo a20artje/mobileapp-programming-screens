@@ -12,9 +12,7 @@ public class CookieActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_cookie);
-
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -23,8 +21,5 @@ public class CookieActivity extends AppCompatActivity {
             TextView textView = findViewById(R.id.cookieText);
             textView.setText(name + number);
         }
-
-
-
     }
 }
